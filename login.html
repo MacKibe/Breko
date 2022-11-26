@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                gap: 10%;
+                font-size: 200%;
+                align-items: center;
+                width: 80%;
+                margin: 7% auto;
+                background-color: antiquewhite;
+            }
+
+            hr {
+                margin: 2.5%;
+            }
+
+            form {
+                background-color: azure;
+                padding: 5%;
+                border: 5px solid rgb(174, 71, 71);
+            }
+            form label {
+                font-size: 120%;
+                display: block;
+            }
+            
+            input {
+                margin: 5%;
+                display: block;
+                font-size: 80%;
+            }
+
+            .button {
+                padding: 3% 5%;
+                margin-left: -.5%;
+            }
+        </style>
+    </head>
+    <body>
+        <aside class="sidepanel">
+            <h1>Breko</h1><hr>
+            <p>Breko is a snack tracking system for mutall users</p>
+        </aside>
+        <form action="" class="mainpanel">
+            <h2>Login</h2><hr>
+            <label>
+                <span>Email: </span><input type="email" name="email" placeholder="Enter email" required>
+            </label>
+            <label>
+                <span>Password: </span><input type="password" name="password" placeholder="Enter password" required>
+            </label>
+
+            <input class="button" type="submit" name="Login"/><br>
+            <span>Do have an account: <a href="reg.html">Sign up</a></span>
+        </form>
+    </body>
+</html>
