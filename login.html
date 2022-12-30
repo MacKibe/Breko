@@ -7,9 +7,11 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-            }
+            }   
+
             body {
                 display: flex;
+                flex-direction: row;
                 gap: 10%;
                 font-size: 200%;
                 align-items: center;
@@ -27,6 +29,7 @@
                 padding: 5%;
                 border: 5px solid rgb(174, 71, 71);
             }
+
             form label {
                 font-size: 120%;
                 display: block;
@@ -41,6 +44,13 @@
             .button {
                 padding: 3% 5%;
                 margin-left: -.5%;
+            }
+            
+            @media (min-width:768px;) {
+                body {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                }
             }
         </style>
     </head>
