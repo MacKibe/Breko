@@ -1,0 +1,72 @@
+  <!-- Button to trigger the login form -->
+  <button onclick="showLoginForm()">Login</button>
+  <!-- HTML for the login form -->
+  <div class="login-form" id="login-form">
+    <form>
+      <label for="username">
+        Username:
+        <input type="text" id="username" name="username">
+      </label>
+      <label for="password">
+        Password:
+        <input type="password" id="password" name="password">
+      </label>
+      <input type="submit" value="Submit"><!-- Close button for the login form -->
+      <span>Would like to exit <a href="#" onclick="hideLoginForm()">cancel</a> </span>||
+      <span>Dont have an account <a href="#" onclick="showSignupForm()">signUp</a></span>
+    </form> 
+  </div>
+  
+  <!-- CSS for styling the login form -->
+  <style>
+    .login-form {
+      display: none;
+    }
+
+    .login-form form {
+      background-color: #ffcbcb;
+      margin-top: 2%;
+      padding: 3% 4%;
+      width: 30%; 
+      border: 3px solid #888;
+    }
+
+    .login-form input[type=text], #login-form input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .login-form input[type=submit] {
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 2% 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .login-form input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    span {
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript for showing and hiding the login form -->
+  <script>
+    function showLoginForm() {
+      document.getElementById("login-form").style.display = "block";
+    }
+    function hideLoginForm() {
+      document.getElementById("login-form").style.display = "none";
+    }
+  </script>
+  
+  
+  
